@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "es2021",
+    "module": "CommonJS",
+    "incremental": true, // 差分ビルド的なやつ
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "declaration": true,
+
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+
+    "outDir": "build",
+    "lib": [
+      "ESNext",
+    ],
+    "typeRoots": [
+      "node_modules/@types",
+    ],
+  },
+  "include": [
+    "source/**/*.ts",
+    "source/**/*.mts",
+  ],
+  "exclude": [
+    "node_modules/**/*",
+  ]
+}
